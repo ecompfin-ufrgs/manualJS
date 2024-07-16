@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Nelson Seixas dos Santos" />
 
-        <title>Introdução à Linguagem JavaScript</title>
+        <title>Manual de JavaScript</title>
         
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js" defer></script>
@@ -25,7 +25,7 @@
         <![endif]-->
         
         <header>
-            <h1>Introdução à JavaScript</h1>
+            <h1>Manual de JavaScript</h1>
 
         </header>
         
@@ -50,6 +50,86 @@
                     <h2>Introdução</h2>
                 </section>
 
+                <p>
+                    Este trabalho objetiva apresentar a linguagem JavaScript.  Sua escrita
+                    pretende-se dar de modo iterativo e incremental.  Portanto, este manual não se
+                    apresenta de forma acabada, mas em constante evolução. 
+                </p>
+
+                <p>
+                    Observe que uma linguagem (humana ou de computador) é um construto usado para
+                    um indivíduo - chamado <em>emissor</em> - envie sinais a outro indivíduo - 
+                    chamado <em>receptor</em>.  Ao conjunto de sinais ou símbolos disponíveis em 
+                    uma linguagem chama-se <strong>léxico</strong>.  O emissor transmite sinais,
+                    ao rec objetivando comunicar uma mensagem ao receptor.
+                </p>
+                    
+                <p>
+                    A fim de que a mensagem possua sentido é ncessário que os sinais estejam
+                    organizados segundo uma regra denominada <strong>sintaxe</strong>.  A sintaxe
+                    prescreve a forma como os símbolos léxicos devem estar ordenados para formar
+                    <em>termos</em> que designam objetos do mundo (concreto ou abstrato) conhecidos
+                    tanto pelo emissor quanto pelo receptor. Ela também determina como os termos
+                     devem ser dispostos para formar mensagens providas de significado ou sentido. 
+                     Chamamos ao conjunto destes objetos e de proposições com sentido de 
+                     <strong>semântica</strong> da linguagem.
+                </p>
+                          
+                <p>
+                    Ou seja, uma linguagem é composta pelos três seguintes elementos:
+                </p>
+
+                <ul>
+                    <li>semântica;</li>
+                    <li>léxico, e</li>
+                    <li>sintaxe.</li>
+                </ul>
+
+                <p>
+                    O léxico da linguagem JavaScript é formado pelo conjunto de caracteres UTF-8 e,
+                    por isso, não nos alongaremos na sua exposição.  Na páginas seguintes, focaremos
+                    nossa atenção na apresentção da semântica da linguagem, isto é, o conjunto de
+                    objetos da linguagem acompanhado das operações que podem ser realizadas com eles.
+                </p>
+
+                <h2>A implementação da linguagem JavaScript</h2>
+
+                <p>
+                    A fim de tornar a apresentação mais prática e fixar melhor o conteúdo, usaremos o
+                    aprendido para escrever pequenos programas em avaScript de modo a obter a 
+                    fluência necessária ao seu emprego real. Para isso, necessitamos de escolher uma
+                    implementação JavaScript para executar nossos programas.  Ocorre que JavaScript
+                    possui diversas implementações, destacando-se, entre estas, aquelas incorporadas
+                    aos navegadores Web, já que estes utilizam, por padrão, JavaScript como sua
+                    linguagem de script nativa.  Além destas, o Node.JS é uma outra implementação
+                    do JavaScript particularmente importante, uma vez que é a primeira a permitir a
+                    execução do código diretamente no sistema operacional do computador onde está
+                    instalada. 
+                </p>
+
+                <p>
+                    Naturalmente, diferentes tempos de execução oferecem diferentes API para operar
+                    os objetos que têm acesso.  Assim, o Node.JS acessa objetos da memória livremente
+                    ao passo que os navegadores são limitados pela restrição de segurança implementada
+                    por eles para evitar ataques via Internet.
+                </p>
+
+                <p>
+                    Como os objetos componentes dos computadores são mais conhecidos dos que os
+                    objetos da rede Web, optamos por inicialmente empregar o Node.JS em nossos
+                    exemplos.  Posteriormente, avançaremos para o uso da API Web dos navegadores,
+                    permitindo a construção de interfaces gráficas de usuário a partir da integração
+                    com elementos HTML estilizados por seletores CSS.
+                </p>
+
+                <p>
+                    Vá agora então para a página <a href="objetos.html">Objetos da linguagem</a> e 
+                    comece a aprender logo sobre a semântica de JavaScript.
+                </p>
+
+                <p>
+                    Até lá!
+                </p>
                 <section>
                     <h2>Léxico</h2>
                 </section>
