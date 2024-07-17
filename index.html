@@ -65,18 +65,34 @@
                 </p>
 
                 <p>
-                    Ao conjunto de sinais ou símbolos disponíveis em uma linguagem chama-se
-                    <strong>léxico</strong>.  A regra de ordenação dos sinais, dos termos
-                    formados por eles e das sentenças formadas por estes termos é chamada
-                    de <strong>sintaxe</strong>. De fato, os termos e as sentenças designam
-                    objetos do mundo (concreto ou abstrato) conhecidos tanto pelo emissor
-                    quanto pelo receptor. Chamamos ao conjunto destes objetos, de sentenças
-                    com sentido (isto é, que efetivamente designam objetos e ações possíveis
-                    de serem realizados com estes) de <strong>semântica</strong> da linguagem. 
+                    Ao conjunto de sinais ou símbolos disponíveis em uma linguagem para
+                    formar termos chama-se <strong>léxico</strong>.  A regra de
+                    ordenação dos sinais, dos termos formados por eles e das sentenças 
+                    formadas por estes termos é chamada de <strong>sintaxe</strong>. 
+                </p>>
+
+                <p>
+                    A partir das regras sintáticas pode-se construir axiomaticamente
+                    termos e as sentenças que designam objetos do mundo 
+                    (concreto ou abstrato) conhecidos tanto pelo emissor quanto pelo
+                    receptor. Genericamente, chamamos a este processo de construção 
+                    <a href="https://en.wikipedia.org/wiki/Semantics_(computer_science)">
+                        semântica</a> da linguagem. 
+                
                 </p>
                     
-                
-                          
+                <p>Assim, a semântica se divide em regras de oriegem sintáticas para
+                    construção dos objetos (atribuição de valores) e
+                    sentenças sintaticamente corretas. conjunto dos objetos construídos
+                    e das sentenças com sentido  (isto é, que efetivamente designam
+                    objetos e ações possíveis de serem realizados com estes)
+                    de <a href="https://en.wikipedia.org/wiki/Denotational_semantics">
+                    semântica denotacional</a> ou <strong>modelo de dados </strong>
+                    da linguagem. Já as regras de construção chama-se de
+                    <a href="https://en.wikipedia.org/wiki/Operational_semantics">
+                        semântica operacional</a> ou <strong>modelo de execução</strong>.
+                    </p>
+
                 <p>
                     Ou seja, uma linguagem é composta pelos três seguintes elementos:
                 </p>
@@ -84,44 +100,77 @@
                 <ul>
                     <li>semântica;</li>
                     <li>léxico, e</li>
-                    <li>sintaxe.</li>
+                    <li>sintaxe (denotacional e operacional).</li>
                 </ul>
 
                 <p>
                     O léxico da linguagem JavaScript é formado pelo conjunto de caracteres UTF-8 e,
                     por isso, não nos alongaremos na sua exposição.  Na páginas seguintes, focaremos
-                    nossa atenção na apresentção da semântica da linguagem, isto é, o conjunto de
-                    objetos da linguagem acompanhado das operações que podem ser realizadas com eles.
+                    nossa atenção na apresentação da semântica da linguagem, isto é, o conjunto de
+                    objetos da linguagem (modelo de dados) acompanhado das operações que podem
+                    ser realizadas com eles (modelo de execução).
                 </p>
 
                 <h2>A implementação da linguagem JavaScript</h2>
 
                 <p>
-                    A fim de tornar a apresentação mais prática e fixar melhor o conteúdo, usaremos o
-                    aprendido para escrever pequenos programas em avaScript de modo a obter a 
-                    fluência necessária ao seu emprego real. Para isso, necessitamos de escolher uma
-                    implementação JavaScript para executar nossos programas.  Ocorre que JavaScript
-                    possui diversas implementações, destacando-se, entre estas, aquelas incorporadas
-                    aos navegadores Web, já que estes utilizam, por padrão, JavaScript como sua
-                    linguagem de script nativa.  Além destas, o Node.JS é uma outra implementação
-                    do JavaScript particularmente importante, uma vez que é a primeira a permitir a
-                    execução do código diretamente no sistema operacional do computador onde está
-                    instalada. 
+                    A fim de praticar o uso da linguagem, precisamos utilizar uma implementação
+                    da linguagem, isto é, um programa que interpreta o código JavaScript, 
+                    transforma-o em código executável e o executa ou produz um executável. Uma
+                    implementação fornece um conjunto de funções para comunicação com o 
+                    ambiente onde ela está instalada.  A este conjunto denominamos de 
+                    <em>application programming interface</em> (API).
+
+                </p>
+
+                <p>
+                    JavaScript foi criada originalmente para automatizar tarefas dentro do
+                    navegador Web NetScape Navigator, sendo, posteriormente, adotada como
+                    linguagem de script nativa dos principais navegadores Web existentes.
+                    Por isso, a API Web e a BOM API foram as primeiras API's implementadas.
+                
+                </p>
+                    
+                <p> Hoje em dia, porém, JavaScript é uma linguagem amplamente utilizada,
+                    estando implementada também na suíte de aplicativos Web para 
+                    escritório <a href="https://docs.google.com/">Google Docs</a>,
+                    no Microsoft Office Web.  Também possui duas implementações para
+                    execução direta pelo sistemaoperacional de computadores, quais sejam:
+                    <a href="https://nodejs.org/en">NodeJS</a> (a primeira e mais usada) e
+                    <a href="https://deno.com/">Deno</a>( mais recente).
                 </p>
 
                 <p>
                     Naturalmente, diferentes tempos de execução oferecem diferentes API para operar
-                    os objetos que têm acesso.  Assim, o Node.JS acessa objetos da memória livremente
-                    ao passo que os navegadores são limitados pela restrição de segurança implementada
-                    por eles para evitar ataques via Internet.
+                    os objetos que têm acesso.  Assim, o Node.JS e o Deno acessam objetos da memória
+                    livremente ao passo que os navegadores são limitados para garantir a
+                    segurança dos usuários contra ataques via Internet.
+                </p>
+                
+                <p>
+                    Sumariamente, os navegadores implementam duas API: API Web e a BOM API.
+                    A API Web oferece funções para manipular objetos que trafegam pela Web,
+                    isto é, documentos HTML, folhas de estilo CSS e objetos JavaScript.
+                    Ao subconjunto da API Web compostos pelas funções para manipular 
+                    documentos HTML chamamos de  <em>document object model</em> API
+                    (DOM API).  A BOM API refere-se ao <em> browser object model</em>) API
+                    e pode depender do fabricante do navegador, porém, na prática, os 
+                    principais navegadores implementam a mesma BOM API.
                 </p>
 
                 <p>
-                    Como os objetos componentes dos computadores são mais conhecidos dos que os
-                    objetos da rede Web, optamos por inicialmente empregar o Node.JS em nossos
-                    exemplos.  Posteriormente, avançaremos para o uso da API Web dos navegadores,
-                    permitindo a construção de interfaces gráficas de usuário a partir da integração
-                    com elementos HTML estilizados por seletores CSS.
+                    A operação com a API Web pressupõe o conhecimento dos objetos Web e a BOM API
+                    pressupõe o conhecimento dos objetos dos navegadores. Como os objetos
+                    componentes dos computadores são mais conhecidos do que os
+                    objetos da Web e da BOM, optamos por inicialmente empregar em nossos
+                    exemplos iniciais uma implementação no sistema operacional, preferindo
+                    o Node.JS por esta ser a mais usada.  
+                </p>
+
+                <p>
+                    Posteriormente, evoluiremos para o uso da API Web e da BOM API,
+                    permitindo a construção de interfaces gráficas de usuário a partir
+                    da integração de elementos HTML estilizados por seletores CSS.
                 </p>
 
                 <p>
