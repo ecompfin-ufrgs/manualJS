@@ -22,9 +22,15 @@
     <nav>
         <ul>
             <li><a href="index.html">Página inicial</a></li>
-            <li><a href="objetos.html">Objetos da linguagem</a></li>
-            <li><a href="index.html">Página inicial</a></li>
-            <li><a href="index.html">Página inicial</a></li>
+                <li><a href="objetos.html">Objetos</a></li>
+                <li><a href="execucao.html">Modelo de execução</a></li>
+                <li><a href="programacaoSequencial.html">Programação sequencial</a></li>
+                <li><a href="programacaoEstruturada.html">Programação estruturada</a></li>
+                <li><a href="programacaoProcedural.html">Programação procedural</a></li>
+                <li><a href="programacaoFuncional.html">Programação funcional</a></li>
+                <li><a href="programacaoOO.html">Programação orientada a objetos</a></li>
+                <li><a href="programacaoWeb.html">Desenvolvimento front end Web</a></li>
+                <li><a href="programacaoServidor.html">Desenvolvimento back end Web</a></li>
         </ul>
     </nav>
 
@@ -41,7 +47,7 @@
                 que se denomina <em>tipo de dado</em>. 
             </p>
 
-            <p>JavaScript possui oito tipos de dados, quais sejam:</p>
+            <p>JavaScript possui sete tipos de dados primitivos, quais sejam:</p>
 
             <ol>
                 <li>String</li>
@@ -51,12 +57,20 @@
                 <li>Undefined</li>
                 <li>Null</li>
                 <li>Symbol</li>
-                <li>Object</li>
             </ol>
 
             <p>
-                Cada um destes tipos de dados e as operações passíveis de serem realizadas com eles
-                é apresentado em outras páginas deste manual.
+                Além destes tipos, existe o tipo
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">
+                    object
+                </a>.  Entre os tipos Object mais importantes, tem-se Function, Array, Date, RegExp
+                e Error.
+
+            </p>
+            <p>
+                Cada um dos sete tipos de dados e as operações passíveis de serem realizadas com eles
+                é apresentado em outras páginas deste manual.  Para isso, apresentaremos inicialmente
+                a forma de se declarar objetos em JavaScript.
             </p>
             
             <h2>Variável</h2>
@@ -82,36 +96,49 @@
 
             <pre>
                 <code>
-                    var nome_variavel : tipo_de_dado = valor_variavel;
+                    var nome_variavel = valor_variavel;
                 </code>
             </pre>
 
-            <uL>
-                <li>
-                    
-                </li>
-                <li>
-                    <pre>
-                        <code>
-                            let nome_variavel : tipo_de_dado = valor_variavel;
-                        </code>
-                    </pre>
-                </li>
-                
-                <li>
-                    <pre>
-                        <code>
-                            var nome_variavel : tipo_de_dado = valor_variavel;
-                        </code>
-                    </pre>
-                    
-            </uL>
+            <p>
+                Observe que, por padrão, não se faz anotação de tipos
+                em JavaScript, porém está sendo discutida a inclusão 
+                de sintaxe na linguagem para permitir que os tipos
+                possam ser especificados no código.  Confira
+                <a href="https://github.com/tc39/proposal-type-annotations">
+                    EcmaScript proposal: type annotations
+                </a>.
+            </p>
 
-            <h3> Exemplo 1: declarando um string</h3>
+            <p>
+                Quando a variável é de escopo local, utiliza-se a sintaxe
+                seguinte:
+            </p>
 
             <pre>
                 <code>
-                    const nome: string = "Isto é um texto";
+                        let nome_variavel = valor_variavel;
+                    </code>
+            </pre>
+
+            <p>
+                Por fim, quando se deseja declarar uma constante,
+                usa-se o que segue:
+            </p>
+            
+            <pre>
+                <code>
+                    const nome_variavel : tipo_de_dado = valor_variavel;
+                </code>
+            </pre>
+                    
+            </uL>
+
+            <h3> Exemplo 1: declarando um string constante</h3>
+
+            <pre>
+                <code>
+                    const nome = "Isto é um texto";
                 </code>
             </pre>
 
@@ -119,18 +146,19 @@
                 Observe que strings precisam vir dentro de aspas duplas ou simples.
             </p>
 
-            <h3> Exemplo 2: declarando um number</h3>
+            <h3> Exemplo 2: declarando um number local</h3>
 
             <pre>
                 <code>
-                    let idade: Number = 8;
+                    let idade = 8;
                 </code>
             </pre>
 
-
-            
-
-            
+            <p>
+                Estudemos em mais detalhes cada um dos tipos primitivos
+                e suas operações, iniciando com os
+                <a href="strings.html">Strings</a> .
+            </p>
 
         </article>
 
