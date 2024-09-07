@@ -50,10 +50,8 @@ Além dos tipos primitivos, JavaScript conta também com estruturas de dados den
 - Date
 - Error
 - Function
-- 
 
 ## 4. Variáveis
-
 Variáveis são identificadores de endereços de memória onde são alocados os objetos (tipos primitivos ou objetos propriamente ditos) os quais são gerenciados pela implementação da linguagem.
 
 A sintaxe para atribuição de variáveis também chamada de instanciamento de objetos é a seguinte:
@@ -63,8 +61,8 @@ A sintaxe para atribuição de variáveis também chamada de instanciamento de o
 ```
 var identificador = valor;
 ```
-ou 
 
+ou 
 ```
 var identificador; (o valor é undefined)
 ```
@@ -72,14 +70,19 @@ var identificador; (o valor é undefined)
 
 - Para variáveis locais cujo valor pode mudar ao longo do código, use:
 
+```
 let identificador = valor;
+```
 
 ou 
-
+```
 let identificador; (o valor é undefined)
+```
 
 - Para definir constantes locais, use:
 
+```
 const identificador = valor;
+```
  
 
