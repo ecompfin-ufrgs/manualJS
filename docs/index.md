@@ -85,4 +85,27 @@ let identificador; (o valor é undefined)
 const identificador = valor;
 ```
  
+## 5. Operações de entrada e saída de dados
+Para realizar saída de dados na tela, use:
 
+```
+let x = 2;
+console.log(x);
+```
+
+Para realizar leitura de dados do teclado, use:
+
+"""
+const readline = require('node:readline'); // importa o módulo readline
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question(`Qual o seu nome?`, nome => {
+  console.log(\n);
+  rl.close();
+});
+
+```
