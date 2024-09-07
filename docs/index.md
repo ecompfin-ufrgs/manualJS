@@ -98,10 +98,12 @@ Para realizar leitura de dados do teclado, use:
 """
 const readline = require('node:readline'); // importa o módulo readline
 
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
+
 
 rl.question(`Qual o seu nome?`, nome => {
   console.log(\n);
