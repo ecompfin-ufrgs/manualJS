@@ -95,7 +95,7 @@ console.log(x);
 
 Para realizar leitura de dados do teclado, use:
 
-"""
+```
 const readline = require('node:readline'); // importa o módulo readline
 
 
