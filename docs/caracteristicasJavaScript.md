@@ -24,8 +24,8 @@ Tudo o que você digitou no hello.js está no escopo global, posto que não foi 
 O documento de referência da linguagem prescreve que, para controlar a duração da vida de todos os objetos em seus escopos, a implementação da linguagem deverá ser responsável por prover um mecanismo de gestão automatizada de memória para organizá-la de acordo com os escopos previstos no código-fonte.
 
 A propósito, JavaScript possui várias implementações, sendo as usadas aquelas disponibilizadas pelos navegadores de Internet, já que inicialmente a linguagem se destinava apenas a automatizar procedimentos dentro do navegador Web NetScape
-Navigator e, posteriormente, passou a ser adotada por todos os mais usados navegadores.  Atualmente, há também implementações para computadores Desktop (Node.JS e Deno.JS) e para dispositivos embarcados.
+Navigator e, posteriormente, passou a ser adotada por todos os mais usados navegadores.  Atualmente, há também implementações para computadores Desktop (Node.JS e Deno.JS) e para dispositivos embarcados. Por ter sido criada para manipular objetos da Web, JavaScript não possui nativamente mecanismos de leitura de dados no terminal de linha de comando, ficando isso a cargo exclusivamente de bibliotecas das implementações JavaScript que são executadas neste ambinente.
 
-A fim de aprender JavaScript sem ter a necessidade de conhecer o ambiente Web (incluindo HTML e CSS), utilizaremos aqui a implementação [NodeJS](https://nodejs.org/en) para exemplificar nossos códigos.
+A fim de aprender JavaScript sem ter a necessidade de conhecer o ambiente Web (incluindo HTML e CSS), utilizaremos aqui a implementação [NodeJS](https://nodejs.org/en) para exemplificar nossos códigos.  Esta implementação fornece a API para acessar os objetos do sistema operacional e de rede, propiciando o desenvolvimento de aplicativos servidores Web, no entanto aqui nos limitaremos ao seu uso básico com objetos do sistema.
 
 A API Web, porém, pode ser facilmente consultada na [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs).
