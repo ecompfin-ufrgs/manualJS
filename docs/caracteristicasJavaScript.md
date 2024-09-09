@@ -1,6 +1,8 @@
 # 1. Características da linguagem: código-fonte, escopo, gestão de memória e implementações
 
-JavaScript é uma linguagem de programação que suporta aos paradigmas sequencial, estruturado, procedural, funcional e orientado a objetos.  O código fonte JavaScript deve
+JavaScript é uma linguagem de programação que suporta aos paradigmas sequencial, estruturado, procedural, funcional e orientado a objetos.  Em JavaScript, a menos dos tipos primitivos que serão especificados mais a frente, tudo é objeto, inclusive todo o ambiente de execução.
+
+O código fonte JavaScript deve
 ser inserido em um arquivo de texto de sistema operacional com extensão .js, ou seja, um programa nomeado hello teria seu código-fonte em um arquivo nomeado hello.js.
 
 Faça isso agora!  Abra o editor de textos do seu sistema operacional e crie um arquivo com nome hello.js.
